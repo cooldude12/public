@@ -1,0 +1,9 @@
+export AWS_ACCESS_KEY_ID=AKIAUC6UBX3UV2DU2AUP
+export AWS_SECRET_ACCESS_KEY=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
+export AWS_DEFAULT_REGION=ap-south-1
+export DB_HOST="triestai-web-stg-db.cbfszrsab1w8.us-east-2.rds.amazonaws.com"
+export DB_USER="triestai"
+export DB_PWD="triestai8585!!"
+export ST_MODELS_PATH=/home/ec2-user/data/st_models
+export DB_NAME="ai"
+export OPENAI_API_KEY='abc123'

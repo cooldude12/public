@@ -1,0 +1,16 @@
+sklearn==0.0
+#openai
+#scikit-learn==1.2.2
+numpy
+#pymilvus==2.2.9
+botocore==1.29.125
+awscli==1.27.125
+utils
+email-validator
+#smtplib
+sentence-transformers>=2.2.2
+#torch
+pandas
+torch>=2.0.1
+# needed for sentence transformer
+#pip3 install torch --index-url https://download.pytorch.org/whl/cpu
