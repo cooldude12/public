@@ -34,8 +34,8 @@ MULTIPLE_ITERATION_MILVUS=True
 MULTIPLE_ITERATION_MILVUS_LIFT=1.5 # limit on increase of search count
 SEARCH_COUNT_LIMIT = 25 
 
- 
-openai.api_key = "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"
+# openai api key 
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 from pymilvus import (
     connections,

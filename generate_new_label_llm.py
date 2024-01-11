@@ -5,8 +5,9 @@ import time
 import sys
 import utils
 from utils import print_debug, exec_sql
+import os 
 
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def is_valid_format(json_str):
     try:

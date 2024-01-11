@@ -79,7 +79,8 @@ import pymysql
 import os
 from collections import Counter
 from utils import pretty_print_json, exec_sql, print_debug
-openai.api_key = "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"
+#openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 MAXIMUM_THRESHOLD_MASTER_INSIGHT=10 # number of master insight
 
 """
@@ -1047,7 +1048,7 @@ def main(operation, pipeline_job_id, question_id, record_count=500):
     print_debug(summary_stats)
     
     start_msg = f"{datetime.datetime.now().strftime('%H:%M:%S')} - Ended \n"
-    return
+    return insights_collapsed
 
 # gather summary stats
 def summarize_nested_array(nested_array, bad_data_array):

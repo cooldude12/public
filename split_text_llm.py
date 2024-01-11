@@ -46,8 +46,8 @@ import time
 import sys
 import utils
 from utils import print_debug, exec_sql, display_output
-
-openai.api_key = "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"
+import os 
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Function to generate split feedback using OpenAI ChatCompletion API
 def generate_split_feedback(prompt, temperature=0.8, model="gpt-3.5-turbo", max_retries=5, **kwargs):

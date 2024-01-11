@@ -7,9 +7,10 @@ import time
 import sys
 import utils
 from utils import print_debug, exec_sql
+import os 
 
 # Initialize OpenAI
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def generate_prompt(training_data):
     training_data_prompt = "\n"
