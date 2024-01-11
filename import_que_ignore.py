@@ -1,5 +1,2 @@
-import pymysql
-import os
-
-T
+# file deleted
 
